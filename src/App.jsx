@@ -7,6 +7,7 @@ import AddFavourite from './components/AddFavourite'
 
 function App() {
   const [movies, setMovies]= useState([])
+  const [favourites, setFavourites] = useState([])
   const [search, setSearch] = useState("")
     
 
@@ -27,12 +28,25 @@ function App() {
     getMovie(search);
   }, [search])
 
-  
+  const addFavouriteMovie =(movie) => {
+    const newFavouriteList = (favourites, movie);
+    setFavourites(newFavouriteList);
+  }
+
   return (
     <div className='w-screen p-5 mov mt-4'>
     <div className='mo'>
+      <h1>Movie</h1>
       <Filter search = {search} setSearch ={setSearch}/>
-      <MovieList movies={movies} favouriteComponent={AddFavourite}/>
+      </div>
+      <div>
+  <MovieList movies={movies} handleFavouritesClick={addFavouriteMovie} favouriteComponent={AddFavourite}/>
+    </div>
+    <div className='w-screen p-5 mov mt-4'>
+      <h1>Favourites</h1>
+      </div>
+      <div>
+  <MovieList movies={favourites} handleFavouritesClick={addFavouriteMovie} favouriteComponent={AddFavourite}/>
     </div>
     </div>
   )

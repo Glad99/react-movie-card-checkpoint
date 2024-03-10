@@ -1,10 +1,8 @@
 import React from 'react'
 
-const MovieCard = ({props}) => {
+const MovieCard = () => {
   return (
-    <div className='movie' key={props.}>
-
-    </div>
+    <div>MovieCard</div>
   )
 }
 
