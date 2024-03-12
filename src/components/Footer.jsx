@@ -1,14 +1,16 @@
-import React from 'react'
+import { BsInstagram } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareFacebook } from "react-icons/fa6";
 
 
 const Footer = () => {
   return (
     <div className='flex justify-between flex-col mt-10 p-5 bg-black'>
-      <div className='flex justify-between'>
-      <h1 className="text-3xl font-bold ">
+      <div className='flex ml-10'>
+      <h1 className="text-3xl font-bold mr-[10rem] lg:mr-[20rem] ">
           M<span className="text-amber-500 ">O</span>V
         </h1>
-        <div className='flex justify-between gap-16 mr-20'>
+        <div className='flex justify-between gap-[5rem] lg:gap-[10rem] mr-20 tracking-wider'>
           <div>
             <h1>Company</h1>
             <p>Home</p>
@@ -31,9 +33,11 @@ const Footer = () => {
         </div>
         </div>
         <div className='flex flex-col justify-center items-center m-5 '>
-          <p>Copyright © 2024 MOV</p>
-          <div>
-            <i>react icons</i>
+          <p className="tracking-wider">Copyright © 2024 MOV</p>
+          <div className="flex mt-5 gap-5">
+          <BsInstagram />
+          <FaXTwitter />
+          <FaSquareFacebook />
           </div>
         </div>
     </div>

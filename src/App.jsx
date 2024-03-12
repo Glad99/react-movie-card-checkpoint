@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './App.css'
 import MovieList from './components/MovieList'
 import Filter from './components/Filter'
-import Hero from './components/Hero'
+import Hero from './pages/Hero'
 import Footer from './components/Footer'
 
 
@@ -13,7 +13,6 @@ function App() {
 
   const getMovie = async ()=>{
     const url = `http://www.omdbapi.com/?s=${search}&apikey=b46ab77a` 
-
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -31,11 +30,11 @@ function App() {
   return (
     <div className="">
       <Hero/>
-      <div className="flex justify-between items-center bg-black absolute top-0 w-[98%]  m-3 h-[3.5rem] pl-3 pr-3 rounded ">
+      <div className="flex justify-between items-center bg-black absolute top-0 w-[98%]  m-3 h-[3.5rem] pl-3 pr-3 rounded  text-white gap-10   py-7 lg:absolute right-0  bg-gray-900/50 backdrop-blur-2xl  md:flex  *:gap-3  ">
         <h1 className="text-3xl font-bold ">
           M<span className="text-amber-500 ">O</span>V
         </h1>
-<select name="Category" id="movie" form="movieform" className='text-black'>
+<select name="Category" id="movie" form="movieform" className='text-black rounded w-[10rem] text-center'>
   <option value="category">Category</option>
   <option value="action">Action</option>
   <option value="romance">Romance</option>
