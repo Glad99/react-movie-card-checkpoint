@@ -28,11 +28,6 @@ function App() {
     getMovie(search);
   }, [search])
 
-  // const addFavouriteMovie =(movie) => {
-  //   const newFavouriteList = (favourites, movie);
-  //   setFavourites(newFavouriteList);
-  // }
-
   return (
     <div className="">
       <Hero/>
