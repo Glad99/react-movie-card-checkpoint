@@ -35,7 +35,12 @@ function App() {
         <h1 className="text-3xl font-bold ">
           M<span className="text-amber-500 ">O</span>V
         </h1>
-        <input type="" />
+<select name="Category" id="movie" form="movieform" className='text-black'>
+  <option value="category">Category</option>
+  <option value="action">Action</option>
+  <option value="romance">Romance</option>
+  <option value="comedy">Comedy</option>
+</select>
         
         <div className='flex justify-between gap-5 lg:gap-10 lg:mr-[2rem]'>
         <p>Home</p>
@@ -43,7 +48,7 @@ function App() {
         <p>Blog</p>
         <p>Contact</p>
         <p>Sign In</p>
-        <p>Sign Up</p>
+        <p className='bg-orange-300 p-1 rounded-md '>Sign Up</p>
         </div>
       </div>
       <div className='flex justify-between items-center ml-4 mr-4  lg:mr-[3.3rem] lg:ml-[3.3rem] mt-2 p-3'>
