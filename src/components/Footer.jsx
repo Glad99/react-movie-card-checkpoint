@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         </div>
         <div className='flex flex-col justify-center items-center m-5 '>
-          <p className="tracking-wider">Copyright © 2024 MOV</p>
+          <p className="tracking-wider">Copyright © 2024 M<span className="text-amber-500 ">O</span>V</p>
           <div className="flex mt-5 gap-5">
           <BsInstagram />
           <FaXTwitter />
