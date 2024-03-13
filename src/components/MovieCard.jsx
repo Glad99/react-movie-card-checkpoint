@@ -15,7 +15,7 @@ const MovieCard = () => {
         <p className=''>{movie.description}</p>
         </div>
         <div className='flex items-center justify-center'>
-        <button className='bg-indigo-300   rounded-md w-full ml-2 mr-2 p-2 pl-3 pr-3 cursor-pointer mb-3 '>Play</button>
+        <a href={movie.trailerURL}> <button className='bg-indigo-300   rounded-md w-full  ml-2 mr-2 p-2 pl-3 pr-3 cursor-pointer mb-3 '>Play</button></a>
         </div>
 
         </div>))}

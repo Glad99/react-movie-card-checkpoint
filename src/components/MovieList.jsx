@@ -9,7 +9,7 @@ const MovieList = (item) => {
             <div className='p-2 pr-1 text-justify'>
         <h1 className='font-bold'>{movie.Title}</h1>
         <div className='flex items-center justify-center'>
-        <button className='bg-indigo-300  rounded-md w-full m-2 p-2 pl-3 pr-3 cursor-pointer mb-3 '>Play</button>
+        <a href={movie.trailerURL}><button className='bg-indigo-300  rounded-md w-full m-2 p-2 pl-3 pr-3 cursor-pointer mb-3 '>Play</button></a>
         </div>
         </div>
         </div>))
