@@ -29,7 +29,7 @@ const HomePage = () => {
     return (
       <div className="">
         <Hero/>
-        <div className="flex justify-between items-center bg-black absolute top-0 w-[98%]  m-3 h-[3.5rem] pl-3 pr-3 rounded  text-white gap-10   py-7 lg:absolute right-0  bg-gray-900/50 backdrop-blur-2xl  md:flex  *:gap-3  ">
+        <div className="flex justify-between items-center bg-black absolute top-0 w-[98%]  m-3 h-[3.5rem] left-[-20px] pl-5 pr-3 rounded  text-white gap-10 py-7 lg:absolute right-0  bg-gray-900/50 backdrop-blur-2xl  md:flex  *:gap-3">
           <h1 className="text-3xl font-bold ">
             M<span className="text-amber-500 ">O</span>V
           </h1>

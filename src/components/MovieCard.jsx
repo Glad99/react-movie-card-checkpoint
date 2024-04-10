@@ -7,9 +7,9 @@ const MovieCard = () => {
 
   return (
     <div className='flex overflow-x-auto flex-wrap mt-5 justify-center '>
-      {movies.map((movie)=> (<div key={movie.id} className='justify-start m-3  w-[13rem] rounded  hover:transition-shadow transition duration-300 ease-in-out hover:scale-110 shadow-2xl  hover:shadow-3xl hover:shadow-slate-600 mb-10  '>
-        <img src={movie.posterURL} alt="" className='rounded w-[13rem] h-[15rem]' />
-        <div className='p-2 pr-1 text-justify'>
+      {movies.map((movie)=> (<div key={movie.id} className='justify-start m-3  w-[20rem] rounded  hover:transition-shadow transition duration-300 ease-in-out hover:scale-110 shadow-2xl  hover:shadow-3xl hover:shadow-slate-600 mb-10  '>
+        <img src={movie.posterURL} alt="" className='rounded w-full h-[17rem]' />
+        <div className='p-2 pr-1 text-justify h-[13rem]'>
         <h1 className='font-bold'>{movie.title}</h1>
         <p>Rating: {movie.ratings}</p>
         <p className=''>{movie.description}</p>
